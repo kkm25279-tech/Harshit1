@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Special 💛</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+font-family:'Trebuchet MS';
+text-align:center;
+overflow:hidden;
+}
+
+.page{
+height:100vh;
+display:none;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px;
+}
+
+/* NEW BACKGROUNDS */
+#page1{display:flex;background:linear-gradient(45deg,#ff758c,#ff7eb3);color:white;}
+#page2{background:linear-gradient(45deg,#43cea2,#185a9d);color:white;}
+#page3{background:linear-gradient(45deg,#fa709a,#fee140);}
+#page4{background:linear-gradient(45deg,#30cfd0,#330867);color:white;}
+#page5{background:linear-gradient(45deg,#f7971e,#ffd200);}
+#page6{background:linear-gradient(45deg,#00c6ff,#0072ff);color:white;}
+#page7{background:linear-gradient(45deg,#f953c6,#b91d73);color:white;}
+#page8{background:linear-gradient(45deg,#c6ffdd,#fbd786,#f7797d);}
+#page9{background:linear-gradient(45deg,#667eea,#764ba2);color:white;}
+#page10{background:linear-gradient(45deg,#ff9a9e,#fecfef);}
+#page11{background:linear-gradient(45deg,#a1ffce,#faffd1);}
+#page12{background:linear-gradient(45deg,#d4fc79,#96e6a1);}
+#page13{background:linear-gradient(45deg,#ffe259,#ffa751);}
+
+/* BIG TEXT */
+h1,h2{
+font-size:28px;
+margin-bottom:15px;
+}
+
+p{
+font-size:18px;
+max-width:90%;
+line-height:1.5;
+}
+
+/* BUTTONS */
+button{
+padding:12px 25px;
+border:none;
+border-radius:25px;
+background:black;
+color:white;
+margin:8px;
+font-size:14px;
+}
+
+/* MEANING */
+.meaning{
+display:none;
+margin-top:10px;
+font-size:14px;
+}
+
+/* VIDEO */
+video{
+width:100%;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+/* FLOWER RAIN */
+.flower{
+position:fixed;
+top:-20px;
+font-size:20px;
+animation:fall linear infinite;
+}
+@keyframes fall{
+0%{transform:translateY(-10%)}
+100%{transform:translateY(110vh)}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page" id="page1">
+<h1>Wait… 💛</h1>
+<p>
+Not every story starts with words…  
+some begin with a feeling you can’t explain.
+</p>
+<button onclick="showPage(2)">Next</button>
+</div>
+
+<!-- PAGE 2 (SONG) -->
+<div class="page" id="page2">
+<h2>Listen 🎶</h2>
+<video controls>
+<source src="song.mp4">
+</video>
+<p>This song feels like something you never want to end.</p>
+<button onclick="showPage(3)">Next</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3">
+<p>
+Sometimes a single person becomes the reason  
+your entire day feels different… in a good way.
+</p>
+<button onclick="toggle('m1')">If you didn’t understand</button>
+<p id="m1" class="meaning">Simple: One person can change your mood.</p>
+<button onclick="showPage(4)">Next</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="page4">
+<p>
+There are connections that don’t need effort…  
+they just happen and stay.
+</p>
+<button onclick="toggle('m2')">If you didn’t understand</button>
+<p id="m2" class="meaning">Simple: Real bonds happen naturally.</p>
+<button onclick="showPage(5)">Next</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="page" id="page5">
+<p>
+Not everyone makes you smile for real…  
+but the right one always does.
+</p>
+<button onclick="toggle('m3')">If you didn’t understand</button>
+<p id="m3" class="meaning">Simple: Right people make you happy.</p>
+<button onclick="showPage(6)">Next</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="page" id="page6">
+<p>
+Some people bring peace…  
+without even saying a single word.
+</p>
+<button onclick="toggle('m4')">If you didn’t understand</button>
+<p id="m4" class="meaning">Simple: Their presence feels calm.</p>
+<button onclick="showPage(7)">Next</button>
+</div>
+
+<!-- PAGE 7 -->
+<div class="page" id="page7">
+<p>
+Time feels different when you are  
+with someone who actually matters.
+</p>
+<button onclick="toggle('m5')">If you didn’t understand</button>
+<p id="m5" class="meaning">Simple: Time feels special with them.</p>
+<button onclick="showPage(8)">Next</button>
+</div>
+
+<!-- PAGE 8 -->
+<div class="page" id="page8">
+<p>
+Real people are rare…  
+and when you find one, you don’t lose them.
+</p>
+<button onclick="toggle('m6')">If you didn’t understand</button>
+<p id="m6" class="meaning">Simple: Genuine people are special.</p>
+<button onclick="showPage(9)">Next</button>
+</div>
+
+<!-- PAGE 9 -->
+<div class="page" id="page9">
+<p>
+Some people are not just part of your life…  
+they become your favorite feeling.
+</p>
+<button onclick="toggle('m7')">If you didn’t understand</button>
+<p id="m7" class="meaning">Simple: They become very important.</p>
+<button onclick="showPage(10)">Next</button>
+</div>
+
+<!-- PAGE 10 -->
+<div class="page" id="page10">
+<p>
+A small moment with the right person  
+can stay in your heart forever.
+</p>
+<button onclick="showPage(11)">Next</button>
+</div>
+
+<!-- PAGE 11 -->
+<div class="page" id="page11">
+<p>
+You don’t need a reason to like someone…  
+sometimes it just feels right.
+</p>
+<button onclick="showPage(12)">Next</button>
+</div>
+
+<!-- PAGE 12 -->
+<div class="page" id="page12">
+<p>
+Some people are not temporary…  
+they stay longer than expected.
+</p>
+<button onclick="showPage(13)">Next</button>
+</div>
+
+<!-- FINAL PAGE -->
+<div class="page" id="page13">
+<h2>₹10000 💰</h2>
+<p>
+This website cost ₹10000 to create.  
+And it has been specially made by Harshit.
+</p>
+</div>
+
+<script>
+
+function showPage(num){
+document.querySelectorAll(".page").forEach(p=>p.style.display="none");
+document.getElementById("page"+num).style.display="flex";
+flowers();
+}
+
+function toggle(id){
+let el=document.getElementById(id);
+el.style.display = (el.style.display=="none") ? "block" : "none";
+}
+
+function flowers(){
+for(let i=0;i<15;i++){
+let f=document.createElement("div");
+f.className="flower";
+f.innerHTML="🌸";
+f.style.left=Math.random()*100+"%";
+f.style.animationDuration=(Math.random()*3+2)+"s";
+document.body.appendChild(f);
+setTimeout(()=>f.remove(),4000);
+}
+}
+
+</script>
+
+</body>
+</html>
